@@ -84,3 +84,14 @@ git push -u origin main
 ## Ssh-agent
 
 - [Setting up SSH-Agent in Windows for Passwordless Git Authentication](https://interworks.com/blog/2021/09/15/setting-up-ssh-agent-in-windows-for-passwordless-git-authentication/)
+
+## Tips
+
+### Cloner un depôt avec toutes ses branches
+
+```
+Dans un dossier vide :
+git clone --bare repo_url .git
+git config core.bare false
+git checkout
+```
